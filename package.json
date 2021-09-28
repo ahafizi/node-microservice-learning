@@ -1,9 +1,10 @@
 {
   "name": "my-first-microservice",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
-    "start": "nodemon index.js"
+    "start": "node ./src/index.js",
+    "start:dev": "nodemon src/index.js"
   },
   "keywords": [],
   "author": "ahafizi",
