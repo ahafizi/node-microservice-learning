@@ -1,0 +1,20 @@
+name: Build and deploy
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: docker
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Build and deploy
+        run: 
+          export VERSION=${{ github.run_id }}   ⑤
+          chmod +x ./scripts/deploy.sh             ⑥
+          ./scripts/deploy.sh
