@@ -16,5 +16,5 @@ jobs:
       - name: Build and deploy
         run:
           export VERSION=${{ github.run_id }}
-          chmod +x "${GITHUB_WORKSPACE}/scripts/deploy.sh
+          chmod +x "${GITHUB_WORKSPACE}/scripts/deploy.sh"
           "${GITHUB_WORKSPACE}/scripts/deploy.sh"
