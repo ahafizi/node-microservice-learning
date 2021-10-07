@@ -7,7 +7,7 @@ resource "azurerm_kubernetes_cluster" "cluster" {
   linux_profile {
     admin_username = var.admin_username
     ssh_key {
-      key_data = "${trimspace(tls_private_key.key.public_key_openssh)} ${var.admin_username}@az)}"
+      key_data = "${trimspace(tls_private_key.key.public_key_openssh)} ${var.admin_username}@azure.com)}"
     }
   }
   default_node_pool {
