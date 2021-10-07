@@ -3,9 +3,9 @@
 
 terraform {
   backend "azurerm" {
-    resource_group_name = "tajtube-terraform"
-    storage_account_name = "tajtubeterraform"
-    container_name = "terraform-state"
+    resource_group_name = "tajtube"
+    storage_account_name = "tajtube"
+    container_name = "tajtube"
     key = "terraform.tfstate"
   }
 }
