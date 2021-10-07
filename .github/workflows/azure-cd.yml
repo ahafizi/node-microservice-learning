@@ -14,7 +14,7 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Build and deploy
-        run: 
-          export VERSION=${{ github.run_id }}   ⑤
-          chmod +x ./scripts/deploy.sh             ⑥
+        run:
+          export VERSION=${{ github.run_id }}
+          chmod +x ./scripts/deploy.sh
           ./scripts/deploy.sh
